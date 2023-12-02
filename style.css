@@ -167,6 +167,38 @@ a {
   padding: 10px;
 }
 
+/* CONTACT */
+
+.contacts {
+  margin: 60px 0 0 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__porfolio {
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__porfolio:hover,
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.time {
+  font-size: 0.8rem;
+  color: gray;
+  padding: 5px;
+}
+
 @media screen and (min-width: 1300px) {
   .container {
     width: 60%;
