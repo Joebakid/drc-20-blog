@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 0;
   overflow-x: hidden;
@@ -129,12 +129,12 @@ a {
 
 .navigation-page-section-div a {
   border-bottom: 1px solid black;
-  padding: 20px 0;
+  padding: 2px 0;
   width: 100%;
 }
 
 .dogemap-body {
-  padding: 40px;
+  padding: 20px;
 }
 
 .arrow-back {
@@ -145,6 +145,7 @@ a {
 
 .arrow-back h2 {
   text-transform: capitalize;
+  font-size: 1.1rem;
 }
 
 .title {
