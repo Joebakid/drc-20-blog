@@ -6,19 +6,44 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body class="container" data-barba="wrapper">
+  <body class="container">
     <nav class="tab-container">
       <div class="tab" onclick="openTab('drc')">DRC-20</div>
       <div class="tab" onclick="openTab('brc')">BRC-20</div>
     </nav>
+
+    <div class="subscribe-section">
+      <p class="subscribe-text">
+        Stay informed about the latest news, developments, and trends in the DRC-20 ecosystem. Receive weekly emails with valuable insights and updates.</p>
+    
+      </p>
+      <form
+        class="form-newsletter"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onsubmit="submit"
+      >
+        <label>
+          <input
+            type="email"
+            class="field"
+            placeholder="Your Email"
+            name="email"
+            required
+        /></label>
+
+        <button type="submit" class="btn-form">Subscribe</button>
+      </form>
+    </div>
 
     <div id="drcContent" class="tab-content">
       <!-- Content for DRC tab -->
       <a href="blog-pages/dogemap.html" class="blog-page"
         >How to get started with dogemap.</a
       >
-      <a href="" class="blog-page">drc network congestion.</a>
-      <a href="" class="blog-page">who is the deployer of dogi.</a>
+      <a href="" class="blog-page">Drc-20 NFT.</a>
+      <a href="" class="blog-page">Who is the deployer of dogi.</a>
     </div>
 
     <div id="brcContent" class="tab-content">

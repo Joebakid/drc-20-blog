@@ -31,6 +31,12 @@ blogLinks.forEach(function (blogLink) {
   blogLink.addEventListener("click", function () {
     document.querySelector("body").style.transform = "scale(0.9)";
     document.querySelector("body").style.opacity = "0";
+    // gsap.to("body", {
+    //   transform: scale(0.5),
+    //   opacity: 0,
+    //   delay: 5,
+    //   duration: 5,
+    // });
   });
 });
 
