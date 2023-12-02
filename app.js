@@ -60,3 +60,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   );
 });
+
+// form
+const subscribeSection = document.querySelector(".subscribe-section");
+const input = document.querySelector(".field");
+const submitBtn = document.querySelector(".btn-form");
+
+subscribeSection.addEventListener("click", function () {
+  // input.focus();
+});
+
+submitBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (input.value.includes("@")) {
+    submitBtn.textContent = "Thanks for submitting";
+    submitBtn.style.backgroundColor = "rgb(90, 87, 87)";
+    subscribeSection.style.padding = "60px";
+  }
+});
