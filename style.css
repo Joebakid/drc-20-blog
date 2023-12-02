@@ -123,8 +123,8 @@ a {
   display: flex;
   flex-direction: column;
   margin: 50px 0;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .navigation-page-section-div a {
@@ -150,6 +150,8 @@ a {
 
 .title {
   display: inline-block;
+  text-transform: uppercase;
+  /* margin: 30px 0 0 0; */
 }
 
 .main {
@@ -159,5 +161,5 @@ a {
 .p-main {
   margin: 20px 0;
   opacity: 0;
-  padding: 10px;
+  /* padding: 10px 0 5px 0; */
 }
