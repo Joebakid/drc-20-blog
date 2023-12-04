@@ -25,18 +25,31 @@ function openTab(tabName) {
     .classList.add("active");
 }
 
-const blogLinks = document.querySelectorAll(".blog-page");
+const blogLinkOne = document.querySelector(".blog-page-one");
+const blogLinkTwo = document.querySelector(".blog-page-two");
+const dogemapPage = document.querySelector(".dogemap");
+const arrowBack = document.querySelectorAll(".arrow-back");
 
-blogLinks.forEach(function (blogLink) {
-  blogLink.addEventListener("click", function () {
-    document.querySelector("body").style.transform = "scale(0.9)";
-    document.querySelector("body").style.opacity = "0";
-    // gsap.to("body", {
-    //   transform: scale(0.5),
-    //   opacity: 0,
-    //   delay: 5,
-    //   duration: 5,
-    // });
+// PAGE ONE
+blogLinkOne.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("body").style.transform = "scale(0.9)";
+
+  document.querySelector(".dogemap").style.visibility = "visible";
+});
+
+// PAGE TWO
+blogLinkTwo.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector("body").style.transform = "scale(0.9)";
+  document.querySelector(".drc-nft").style.visibility = "visible";
+});
+
+arrowBack.forEach(function (arrow) {
+  arrow.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".dogemap").style.visibility = "hidden";
+    document.querySelector(".drc-nft").style.visibility = "hidden";
   });
 });
 
@@ -73,7 +86,7 @@ subscribeSection.addEventListener("click", function () {
 submitBtn.addEventListener("click", function (e) {
   e.preventDefault();
   if (input.value.includes("@")) {
-    submitBtn.textContent = "Thanks for submitting";
+    submitBtn.textContent = "Thanks for submitting.";
     submitBtn.style.backgroundColor = "rgb(90, 87, 87)";
     subscribeSection.style.padding = "60px";
   }

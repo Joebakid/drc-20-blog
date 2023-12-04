@@ -9,6 +9,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   transition: all 1s ease-in-out;
+  position: relative;
 }
 
 .container {
@@ -60,7 +61,7 @@ body {
   color: #fff;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* TAB */
@@ -142,9 +143,21 @@ a {
 }
 
 .arrow-back {
+  /* align-items: end; */
   align-items: end;
-  display: flex;
   justify-content: end;
+  display: flex;
+  width: 50px;
+  justify-content: end;
+  padding: 4px;
+  transition: all 0.5s ease-in;
+  border-radius: 5px;
+}
+
+.arrow-back:hover {
+  border: none;
+  background-color: bisque;
+  color: #444;
 }
 
 .arrow-back h2 {
@@ -163,8 +176,8 @@ a {
 
 .p-main {
   margin: 20px 0;
-  opacity: 0;
-  padding: 10px;
+  /* opacity: 0; */
+  /* padding: 10px; */
 }
 
 /* CONTACT */
@@ -197,6 +210,18 @@ a {
   font-size: 0.8rem;
   color: gray;
   padding: 5px;
+}
+
+.dogemap,
+.drc-nft {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
 }
 
 @media screen and (min-width: 1300px) {
